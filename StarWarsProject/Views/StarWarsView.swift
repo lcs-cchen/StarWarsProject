@@ -7,20 +7,24 @@
 
 import SwiftUI
 
+
 struct StarWarsView: View {
     var body: some View {
         NavigationView{
             VStack{
-                List{
-                    Text("Luke")
-                    Text("DarthVader")
+                List(listOfPeople)
+                VStack{
+                    Text(LukeExample.name)
+                }
+
+
                 }
                 
                 
             }
             
             .navigationTitle("Star Wars Character Browser")
-        }    }
+        }
 }
 
 struct StarWarsView_Previews: PreviewProvider {

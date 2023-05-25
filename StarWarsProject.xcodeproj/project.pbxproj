@@ -11,6 +11,8 @@
 		6E8C9FDF2A1FE3B30006F3FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E8C9FDE2A1FE3B30006F3FB /* Assets.xcassets */; };
 		6E8C9FE22A1FE3B30006F3FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E8C9FE12A1FE3B30006F3FB /* Preview Assets.xcassets */; };
 		6E8C9FED2A1FE6C10006F3FB /* StarWarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8C9FEC2A1FE6C10006F3FB /* StarWarsView.swift */; };
+		6E8C9FF32A1FE8410006F3FB /* StarWarsName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8C9FF22A1FE8410006F3FB /* StarWarsName.swift */; };
+		6E8C9FF62A1FEC6E0006F3FB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8C9FF52A1FEC6E0006F3FB /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		6E8C9FDE2A1FE3B30006F3FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E8C9FE12A1FE3B30006F3FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6E8C9FEC2A1FE6C10006F3FB /* StarWarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsView.swift; sourceTree = "<group>"; };
+		6E8C9FF22A1FE8410006F3FB /* StarWarsName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsName.swift; sourceTree = "<group>"; };
+		6E8C9FF52A1FEC6E0006F3FB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 		6E8C9FE92A1FE3C90006F3FB /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				6E8C9FF42A1FEC5C0006F3FB /* Services */,
 			);
 			name = Helper;
 			path = "New Group/Helper";
@@ -88,8 +93,17 @@
 		6E8C9FEB2A1FE4100006F3FB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6E8C9FF22A1FE8410006F3FB /* StarWarsName.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6E8C9FF42A1FEC5C0006F3FB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6E8C9FF52A1FEC6E0006F3FB /* NetworkService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +178,8 @@
 			files = (
 				6E8C9FDB2A1FE3B10006F3FB /* StarWarsProjectApp.swift in Sources */,
 				6E8C9FED2A1FE6C10006F3FB /* StarWarsView.swift in Sources */,
+				6E8C9FF62A1FEC6E0006F3FB /* NetworkService.swift in Sources */,
+				6E8C9FF32A1FE8410006F3FB /* StarWarsName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
