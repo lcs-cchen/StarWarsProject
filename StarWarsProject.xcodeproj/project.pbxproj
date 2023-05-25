@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		6E8C9FDB2A1FE3B10006F3FB /* StarWarsProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8C9FDA2A1FE3B10006F3FB /* StarWarsProjectApp.swift */; };
-		6E8C9FDD2A1FE3B10006F3FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8C9FDC2A1FE3B10006F3FB /* ContentView.swift */; };
 		6E8C9FDF2A1FE3B30006F3FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E8C9FDE2A1FE3B30006F3FB /* Assets.xcassets */; };
 		6E8C9FE22A1FE3B30006F3FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E8C9FE12A1FE3B30006F3FB /* Preview Assets.xcassets */; };
+		6E8C9FED2A1FE6C10006F3FB /* StarWarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8C9FEC2A1FE6C10006F3FB /* StarWarsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6E8C9FD72A1FE3B10006F3FB /* StarWarsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E8C9FDA2A1FE3B10006F3FB /* StarWarsProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsProjectApp.swift; sourceTree = "<group>"; };
-		6E8C9FDC2A1FE3B10006F3FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6E8C9FDE2A1FE3B30006F3FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E8C9FE12A1FE3B30006F3FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6E8C9FEC2A1FE6C10006F3FB /* StarWarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				6E8C9FDA2A1FE3B10006F3FB /* StarWarsProjectApp.swift */,
-				6E8C9FDC2A1FE3B10006F3FB /* ContentView.swift */,
+				6E8C9FEB2A1FE4100006F3FB /* Model */,
+				6E8C9FE82A1FE3C80006F3FB /* Views */,
+				6E8C9FE92A1FE3C90006F3FB /* Helper */,
 				6E8C9FDE2A1FE3B30006F3FB /* Assets.xcassets */,
 				6E8C9FE02A1FE3B30006F3FB /* Preview Content */,
 			);
@@ -65,6 +67,29 @@
 				6E8C9FE12A1FE3B30006F3FB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6E8C9FE82A1FE3C80006F3FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E8C9FEC2A1FE6C10006F3FB /* StarWarsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E8C9FE92A1FE3C90006F3FB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helper;
+			path = "New Group/Helper";
+			sourceTree = "<group>";
+		};
+		6E8C9FEB2A1FE4100006F3FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E8C9FDD2A1FE3B10006F3FB /* ContentView.swift in Sources */,
 				6E8C9FDB2A1FE3B10006F3FB /* StarWarsProjectApp.swift in Sources */,
+				6E8C9FED2A1FE6C10006F3FB /* StarWarsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
