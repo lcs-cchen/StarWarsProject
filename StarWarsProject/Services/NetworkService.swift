@@ -20,7 +20,7 @@ struct NetworkService {
     // in our app. Since this function might take a while to complete
     // this ensures that other parts of our app (like the user interface)
     // won't "freeze up" while this function does it's job.
-    static func fetch() async -> [StarWarsName] {
+    static func fetch(resultsFor Name : String) async -> [StarWarsName] {
         
         // 1. Attempt to create a URL from the address provided
         let endpoint = "https://swapi.dev/api/people/"
@@ -62,7 +62,7 @@ struct NetworkService {
             print("----")
             
             // Show the detailed error to help with debugging
-            print(error.localizedDescription)
+            print(error)
             return []
             
         }

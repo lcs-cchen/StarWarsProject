@@ -23,7 +23,7 @@ struct SearchView: View {
             }
         }
         .task {
-            foundStarWarsName = await NetworkService.fetch()
+            foundStarWarsName = await NetworkService.fetch(resultsFor: "Luke Skywalker")
         }
     }
 }

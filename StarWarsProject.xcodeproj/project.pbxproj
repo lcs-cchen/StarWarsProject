@@ -62,6 +62,7 @@
 				6E8C9FDA2A1FE3B10006F3FB /* StarWarsProjectApp.swift */,
 				6E8C9FEB2A1FE4100006F3FB /* Model */,
 				6E8C9FE82A1FE3C80006F3FB /* Views */,
+				6E8C9FF42A1FEC5C0006F3FB /* Services */,
 				6E8C9FE92A1FE3C90006F3FB /* Helper */,
 				6E8C9FDE2A1FE3B30006F3FB /* Assets.xcassets */,
 				6E8C9FE02A1FE3B30006F3FB /* Preview Content */,
@@ -89,7 +90,6 @@
 		6E8C9FE92A1FE3C90006F3FB /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				6E8C9FF42A1FEC5C0006F3FB /* Services */,
 			);
 			name = Helper;
 			path = "New Group/Helper";
