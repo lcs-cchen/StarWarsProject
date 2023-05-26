@@ -12,7 +12,7 @@ struct StarWarsView: View {
     var body: some View {
         NavigationView{
             VStack{
-                List(listOfPeople)
+                List(listOfPeople, id: \.self)
                 VStack{
                     Text(LukeExample.name)
                 }
