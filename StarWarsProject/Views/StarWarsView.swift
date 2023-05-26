@@ -9,22 +9,27 @@ import SwiftUI
 
 
 struct StarWarsView: View {
+    @State var foundStarWarsName: [StarWarsName] = []
     var body: some View {
         NavigationView{
-            VStack{
-                List(listOfPeople, id: \.self)
-                VStack{
-                    Text(LukeExample.name)
+            
+                List(foundStarWarsName, id: \.self){ currentName in
+                    VStack{
+                        Text(currentName.name)
+                    }
+                    
+                    
                 }
-
-
+                .task {
+                    foundStarWarsName = await NetworkService.fetch()
                 }
                 
                 
-            }
+            
             
             .navigationTitle("Star Wars Character Browser")
         }
+    }
 }
 
 struct StarWarsView_Previews: PreviewProvider {

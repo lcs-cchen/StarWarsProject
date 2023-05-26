@@ -98,8 +98,8 @@
 		6E8C9FEB2A1FE4100006F3FB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6E8C9FF22A1FE8410006F3FB /* StarWarsName.swift */,
 				6E8CA0192A20E7990006F3FB /* SearchResult.swift */,
+				6E8C9FF22A1FE8410006F3FB /* StarWarsName.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

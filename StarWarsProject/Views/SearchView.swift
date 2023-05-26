@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct SearchView: View {
+    @State var foundStarWarsName: [StarWarsName] = []
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(foundStarWarsName, id: \.self){ currentName in
+            
+            VStack{
+                Text(currentName.name)
+                    .bold()
+                
+                Text(currentName.birth_year)
+                
+            }
+        }
+        .task {
+            foundStarWarsName = await NetworkService.fetch()
+        }
     }
 }
 

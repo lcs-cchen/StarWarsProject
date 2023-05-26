@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct StarWarsName: Codable{
+struct StarWarsName: Codable, Hashable{
  
     
     let name: String
@@ -20,6 +20,3 @@ struct StarWarsName: Codable{
     let genderl: String
 }
 
-let LukeExample = StarWarsName(name: "LukeSkywalker", height: 172, weight: 77, hair_color: "blond", skin_color: "fair",eye_color: "blue", birth_year: "19BBY", genderl: "male")
-
-let listOfPeople = [LukeExample]
